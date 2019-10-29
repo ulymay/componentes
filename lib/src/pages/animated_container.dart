@@ -47,9 +47,9 @@ class _AnimatedContainerPageState extends State<AnimatedContainerPage> {
 
     setState(() {
 
-    _width += random.nextInt(300).toDouble();
-    _height += random.nextInt(300).toDouble();
-    _color = Colors.fromFRBO(
+    _width = random.nextInt(300).toDouble();
+    _height = random.nextInt(300).toDouble();
+    _color = Color.fromRGBO(
       random.nextInt(255),
       random.nextInt(255),
       random.nextInt(255),
