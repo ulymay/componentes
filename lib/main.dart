@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 
+import 'package:componentes/src/pages/alert_page.dart';
 import 'package:componentes/src/routes/routes.dart';
 
 
@@ -25,15 +26,15 @@ class MyApp extends StatelessWidget {
       // home: HomePage(),
       initialRoute: '/',
       routes: getApplicationRoutes(),
-      // onGenerateRoute: ( RouteSettings settings ){
+      onGenerateRoute: ( RouteSettings settings ){
 
-      //   print('Ruta llamada: ${ settings.name }');
+        print('Ruta llamada: ${ settings.name }');
 
-      //   return MaterialPageRoute(
-      //     // builder: (BuildContext context) => CardPage()
-      //   );
+        return MaterialPageRoute(
+          builder: (BuildContext context) => AlertPage()
+        );
 
-      // },
+      },
     );
   }
 }
